@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; 
+        }
+        .offers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .offer {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .offer img {
+            width: 100%;
+            display: block;
+        }
+        .code-box {
+            background-color: #ff69b4;
+            padding: 10px;
+            border-radius: 0 0 8px 8px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: right;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .offer-content {
+            padding-bottom: 30px; 
+        }
+        .offer-heading {
+            display: inline-block;
+            color: black;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .offer-heading::before,
+        .offer-heading::after {
+            content: "";
+            display: inline-block;
+            width: 50%; 
+            height: 2px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .offer-heading::before {
+            right: 100%; 
+            margin-right: 25px; 
+        }
+        .offer-heading::after {
+            left: 100%; 
+            margin-left: 25px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="offer-heading">OFFERS</h1>
+        <div class="offers">
+            <div class="offer">
+                <div class="offer-content">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/dac9f8db-7732-468b-959f-5dd03e5dcf7e.jpg" alt="Offer 1">
+                    <div class="code-box">BDAY400</div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="offer-content">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/6e7ae89e-7b5e-4cd5-a9c8-0b8500e1d2df.gif" alt="Offer 2">
+                    <div class="code-box">BDAY1499</div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="offer-content">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/0d42816a-8612-4f55-b6ac-f6d0e38c8b32.jpg" alt="Offer 3">
+                    <div class="code-box">BDAY999</div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="offer-content">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/0ac710c1-0022-4062-a589-6840a7ba9e3e.png" alt="Offer 4">
+                    <div class="code-box">BDAY</div>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="offer-content">
+                    <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/749e67c7-1e80-42e0-8058-3c76cae33c1c.jpg" alt="Offer 5">
+                    <div class="code-box">BDAY300</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
